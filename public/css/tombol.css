@@ -1,0 +1,91 @@
+.kembali-btn{
+    padding: 8px 10px;
+    font-weight: medium;
+    font-size: 12px;
+    background-color: #F51A54;
+    color: #FFFF;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px rgba(152, 3, 48, 0.3);
+    text-decoration: none;
+}
+.kembali-btn:hover{
+    background-color: #bf103f;
+}
+.kirim-btn{
+    padding: 8px 10px;
+    font-weight: medium;
+    font-size: 12px;
+    background-color: #017DFA;
+    color: #FFFF;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px rgba(3, 68, 152, 0.3);
+    text-decoration: none;
+}
+.kirim-btn:hover{
+    background-color: #0566c6;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFF;
+}
+.grup-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.grup2-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+}
+.edit-btn{
+    padding: 4px 8px;
+    font-weight: 400;
+    font-size: 10px;
+    background-color: #097ac5;
+    color: #FFFF;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(10, 69, 147, 0.3);
+    text-decoration: none;
+    cursor: pointer;
+}
+.edit-btn:hover{
+    background-color: #095689;
+    color: #FFFF;
+}
+.hapus-btn{
+    background-color: #F51A54;
+    color: #FFFF;
+    padding: 4px 8px;
+    font-size: 10px;
+    font-weight: 400;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(10, 69, 147, 0.3);
+    text-decoration: none;
+    cursor: pointer;
+}
+.hapus-btn:hover{
+    background-color: #bf103f;
+    color: #FFFF;
+}
+.delete{
+    padding: 0;
+    margin: 0;
+}
+.detail-btn {
+    background-color: #17eb70;
+    color: #252525;
+    padding: 4px 8px;
+    font-size: 10px;
+    font-weight: 400;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(10, 69, 147, 0.3);
+    text-decoration: none;
+    cursor: pointer;
+}
+.detail-btn:hover{
+    background-color: #139c4c;
+    color: #FFFF;
+}

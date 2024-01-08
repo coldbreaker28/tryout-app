@@ -1,0 +1,51 @@
+:root{
+    --hover-color: #2a424f;
+    --hidden: none;
+}
+
+.head-text{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1180px;
+    width: 105%;
+}
+.head-text h4{
+    padding-left: 25px;
+}
+.head-text p{
+    padding-left: 35px;
+}
+.right-menu{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.right-menu .list {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.right-menu .list.hidden{
+    display: var(--hidden);
+}
+.right-menu .log-out{
+    background-color: #233037;
+    color: #ffff;
+    padding: 8px;
+    box-shadow: 3px 4px 6px rgba(0, 43, 80, 0.3);
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.right-menu .log-out:hover{
+    background-color: var(--hover-color);
+}
+
+.right-menu .log-out.hidden{
+    display: var(--hidden);
+}

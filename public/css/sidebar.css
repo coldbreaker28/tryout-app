@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: #fafcff;
+    /* background: #FFFFFF; */
+}
+body::-webkit-scrollbar{
+    display: hidden;
+}
+hr{
+    border: 1px solid rgba(237, 229, 242, 0.1);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    margin-right: 55px;
+    
+}
+.main-content{
+    margin: 0px 20px 0px 40px;
+}
+.container-body{
+    margin: 0px 90px;
+    transition: all 0.5s ease;
+    
+}
+.cr{
+    background-color: transparent;
+    color: #fff;
+    padding-top: 5px;
+    position: fixed;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0px;
+    top: 94%;
+    left: 5px;
+}
+
+.side-content .toggle-btn {
+    background-color: #233037;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0px;
+    font-weight: bold;
+    position: fixed;
+    border-radius: 20%;
+    font-size: 24px;
+    top: 12%; 
+    left: 75px;
+    z-index: 10;
+    transition: all 0.5s ease;
+}
+.side-content .toggle-btn.active {
+    left: 185px;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 20%;
+    transform: rotate(90deg);
+    box-shadow: 3px 2px 5px rgba(53, 186, 243, 0.3);
+}
+.sidebar {
+    width: 100px;
+    height: 200%;
+    background-color: #233037;
+    color: #fff;
+    padding-top: 5px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    box-shadow: 0 0 10px rgba(23,46,110,0.2);
+    z-index: 10;
+}
+
+.sidebar ul{
+    list-style: none;
+    margin: 25px 20px;
+    padding: 10px 20px 20px 20px;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid #fff; */
+}
+
+.sidebar .menu{
+    margin: 0px;
+    transform: translateX(0);
+    animation: slideOut 0.5s ease both;
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.sidebar ul li .menu-item a .menu-text{
+    display: none;
+    opacity: 0;
+}
+
+.sidebar.active {
+    width: 200px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar.active ul {
+    top: 10;
+    list-style: none;
+    padding: 0px 5px 0px 5px;
+    margin: 30px 15px 15px 15px;
+    text-align: left;
+    /* border: 1px solid #fff; */
+}
+.sidebar.active .menu {
+    margin: 0px 0px -14px 0px;
+    padding: 0px 0px 8px 30px;
+    transform: translateX(-20px);
+    animation: slideIn 0.5s ease both;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.sidebar.active .menu-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar ul li .menu-item a{
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.sidebar.active ul li .menu-item a .menu-text{
+    display: flex;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    margin-left: 8px;
+}
+.sidebar.active a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.sidebar ul li .menu-item a:hover{
+    color: #01DCFE;
+    transition: color 0.3s ease-in;
+    box-shadow: 2px 2px 3px rgba(11, 58, 152, 0.3);
+}   
+.sidebar.active a:hover {
+    color: #01DCFE;
+}
+/* .sidebar.active i {
+    margin-right: 8px;
+    font-size: 14px;
+} */
+.sidebar.active .menu .menu-item a:hover {
+    color: #01DCFE;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px){
+    .container-body {
+        margin: 10px 20px;
+    }
+    .nav-bar{
+        padding: 10px;
+    }
+    .nav-text{
+        font-size: 9px;
+    }
+    .sidebar {
+        width: 150px;
+        height: 200%;
+        color: #fff;
+        top: 60px;
+        padding-top: 5px;
+        position: fixed;
+        left: -220px;
+        transition: all 0.5s ease;
+        box-shadow: 0 0 10px rgba(23,46,110,0.2);
+        z-index: 10;
+        
+    }
+    .nav-text{
+        font-size: 9px;
+    }
+    .toggle-btn {
+        background-color: #fff;
+        color: #017DFA;
+        box-shadow: 4px 3px 8px rgba(53, 186, 243, 0.2);
+        cursor: pointer;
+        border: none;
+        /* padding: 5px; */
+        /* margin: 5px; */
+        cursor: pointer;
+        font-size: 20px;
+        position: fixed;
+        border-radius: 20%;
+        top: 50%; /* Meletakkan tombol hamburger di tengah vertikal */
+        left: 5px;
+        transform: translateY(-50%); /* Mengatur tombol hamburger di tengah vertikal */
+        z-index: 100;
+        transition: all 0.5s ease;
+        outline: none;
+        display: inline-block;
+    }
+    /* .toggle-btn.active {
+        background-color: #017DFA;
+        color: #fff;
+        transform: translateY(-50%) rotate(180deg);
+        left: 130px;
+        z-index: 1000;
+    } */
+
+    .sidebar .submenu {
+        display: none;
+        /* top: 0;
+        left: 100%; */
+        margin-top: 10px;
+        margin-right: 10px;
+        list-style: none;
+        padding-right: 10px;
+        transition: all 0.3s ease;
+    }
+    .sidebar .submenu.active {
+        display: block;
+        opacity: 1;
+        max-height: 100%;
+        transition: all 0.3s ease;
+    }
+    .sidebar .submenu li {
+        padding: 5;
+        margin: 0;
+        margin-left: 8px;
+    }
+    
+    .sidebar .menu i{
+        font-size: 12px;
+    }
+
+    /* Gaya teks menu di layar kecil */
+    .sidebar a {
+        font-size: 12px; /* Sesuaikan ukuran font */
+    }
+
+    /* Gaya submenu di layar kecil */
+    .sidebar .submenu {
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    /* Gaya teks submenu di layar kecil */
+    .sidebar .menu .menu-item span{
+        font-size: 10px;
+    }
+
+    .sidebar .submenu a {
+        font-size: 10px; /* Sesuaikan ukuran font */
+    }
+    .sidebar .avatar-profile{
+        width: 75px;
+        height: 75px;
+        padding: 5px;
+        margin: 20px 20px 20px 38px;
+        background: transparent;
+    }
+    .sidebar .avatar-profile .avatar img{
+        clip-path: ellipse(50% 50% at center);
+        padding: 10px 10px 15px 10px;
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .nav-bar{
+        padding: 20px 10px 20px 10px;
+        align-items: center;
+    }
+    .container-body{
+        margin: 20px 10px;
+    }
+    .nav-text{
+        font-size: 14px;
+        padding-right: 20px;
+    }
+    .user-logout-container .logo{
+        font-size: 14px;
+        margin-right: 5px;
+    }
+    .var1{
+        font-size: 14px;
+    }
+    .toggle-btn{
+        background-color: #FFFFFF;
+        color: #017DFA;
+        box-shadow:  4px 3px 8px rgba(53,186,243,0.3);
+        cursor: pointer;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        position: fixed;
+        border-radius: 20%;
+        top: 50%;
+        transform:  translateY(-50%);
+        z-index: 100;
+        transition: all 0.5s ease;
+        outline: none;
+        display: inline-block;
+    }
+    /* .toggle-btn.active{
+        background-color: #017DFA;
+        color: #fff;
+        transform: translateY(-50%) rotate(180deg);
+        z-index: 1000;
+        left: 100px;
+    } */
+    .sidebar{
+        width: 120px;
+        height: 100%;
+        position: fixed;
+    }
+    .sidebar .menu{
+        margin-top: 10px;
+        padding-left: 15px;
+        padding-right: 0px;
+        position: relative;
+        font-size: 10px;
+    }
+    .sidebar .menu .menu-item a {
+        padding: 0;
+        margin: 0;
+    }
+    .sidebar .menu .menu-item i {
+        font-size: 10px;
+    }
+    .sidebar .menu-item .arrow{
+        font-size: 8px;
+        display: none;
+    }
+    .sidebar .submenu {
+        margin-top: 3px;
+        margin-right: 5px;
+        list-style: none;
+        padding: 0;
+    }
+    .sidebar .submenu.active li a{
+        padding: 0;
+        margin: 0;
+    }
+    .sidebar .submenu.active li i{
+        font-size: 10px;
+    }
+    .sidebar .avatar-profile{
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        margin: 20px 20px 20px 30px;
+        background: transparent;
+    }
+    .sidebar .avatar-profile .avatar img{
+        clip-path: ellipse(50% 50% at center);
+        padding: 5px 5px 10px 5px;
+        width: 100%;
+        height: 100%;
+    }
+    .logo-container img{
+        display: none;
+    }
+}

@@ -1,0 +1,102 @@
+.content-tools {
+    /* max-width: 130px;
+    background-color: #FFFF;
+    box-shadow: 3px 4px 6px rgba(0, 0, 50, 0.3);
+    padding: 20px 15px 20px 10px; */
+    margin: 20px 0px 0px 10px;
+    /* border-radius: 10px; */
+}
+
+.link-buat-soal{
+    padding: 10px;
+    margin: 0px 0px 10px 5px;
+    background-color: #017DFA;
+    color: #FFFF;
+    box-shadow: 3px 4px 6px rgba(80, 10, 210, 0.3);
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.link-buat-soal:hover{
+    background-color: #0b58a4;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFF;
+}
+/* CSS untuk paginasi responsif */
+.page-container {
+    padding: 20px;
+    margin: 30px 0px;
+    background-color: #FFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(80, 10, 210, 0.3);
+}
+
+.page-container2 {
+    padding: 20px;
+    margin: 30px 0px;
+    background-color: #FFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(80, 10, 210, 0.3);
+    width: 400px;
+}
+
+.page {
+    margin-bottom: 10px;
+}
+
+.page .page-title{
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.page .page-content{
+    font-size: 12px;
+    text-align: justify;
+    font-weight: normal;
+    text-decoration: none;
+}
+.page .page-body{
+    color: #292929;
+    text-decoration: none;
+    border: 1px dashed #9f9f9f;
+    padding: 10px 15px 20px 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #fcf6ff;
+}
+hr{
+    border: 1px solid #EDE5F2;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+/* CSS */
+#pagination-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.pagination .page-item .page-link::before,
+.pagination .page-item .page-link::after {
+    display: none;
+}
+.font-monospace {
+    font-family: 'Courier New', monospace;
+    font-size: 1em;
+}

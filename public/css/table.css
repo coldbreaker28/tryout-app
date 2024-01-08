@@ -1,0 +1,97 @@
+.table-container{
+    margin: 20px 10px 150px 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px 20px;
+    box-shadow: 2px 3px  5px rgba(36, 20, 140, 0.3);
+    overflow: auto;
+}
+.responsive-table {
+    flex-grow: 1;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 15px;
+    border: 0.5px dashed;
+}
+.responsive-table th {
+    font-size: 11px;
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #1B262C;
+}
+.responsive-table td{
+    font-size: 9px;
+    padding: 8px;
+    text-align: left;
+}
+.responsive-table th {
+    background-color: #1B262C;
+    color: #fff;
+}
+.responsive-table tr:nth-child(even) {
+    background-color: rgba(148, 0, 255, 0.1);
+}
+.responsive-table tr:hover{
+    background-color: rgba(148, 0, 255, 0.3);
+    border: 1px dashed #1B262C;
+}
+.content hr{
+    border: 1px solid #EDE5F2;
+    margin: 10px 0;
+}
+.content-transparent hr{
+    border: 1px solid #EDE5F2;
+    margin: 5px 0 10px 0;
+    max-width: 400px;
+    width: 100%;
+}
+
+.group-filter{
+    height: 5px;
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    align-items: center;
+}
+.contain-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.contain-btn .filter-btn{
+    margin-left: 8px;
+    width: 75px;
+    padding: 8px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #017DFA;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    font-size: 11px;
+    cursor: pointer;
+}
+.contain-btn .filter-btn i{margin-right: 8px;}
+
+.contain-btn .filter-btn:hover{background-color: #0f4b88;}
+.contain-btn .filter-btn:active{background-color: #065AAE;}
+
+.filter-cari{
+    cursor: text;
+    font-size: 11px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(148, 0, 255,0.1);
+    padding-left: 15px;
+    padding-right: 3%;
+    border: 1px solid #87a3aa47;
+    width: 100%;
+    max-width: 850px;
+    height: 35px;
+}
+.group-filter input:hover{
+    background-color: rgba(148, 0, 255,0.1);
+}
+.group-filter h5{
+    width: 200px;
+}
+
+#no, #aksi {
+    text-align: center;
+}
